@@ -4,7 +4,7 @@ maintainer_email "sean@studyblue.com"
 license          "Apache 2.0"
 description      "Installs/Configures Netflix Asgard with Tomcat and Apache"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.0.2"
+version          "0.1.0"
 
 %w{ centos fedora redhat scientific amazon }.each do |os|
   supports os
