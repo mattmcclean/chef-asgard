@@ -27,18 +27,17 @@ include_recipe "java"
 #
 include_recipe "tomcat"
 
-tomcat "asgard" do
-  action              :install
-
-  user                "tomcat"
-  auto_deploy         false
-  manage_config_file  true
-  shutdown_wait       node["tomcat"]["shutdown_wait"]
-  jvm_opts            node["tomcat"]["jvm_opts"]
-  jmx_opts            node["tomcat"]["jmx_opts"]
-  webapp_opts         ["-DASGARD_HOME=#{node['asgard']['home']}/.asgard"]
-  more_opts           node["tomcat"]["more_opts"]
-end
+#tomcat "asgard" do
+#  action              :install
+#  user                "tomcat"
+#  auto_deploy         false
+#  manage_config_file  true
+#  shutdown_wait       node["tomcat"]["shutdown_wait"]
+#  jvm_opts            node["tomcat"]["jvm_opts"]
+#  jmx_opts            node["tomcat"]["jmx_opts"]
+#  webapp_opts         ["-DASGARD_HOME=#{node['asgard']['home']}/.asgard"]
+#  more_opts           node["tomcat"]["more_opts"]
+#end
 
 # == ASGARD SETUP
 #
