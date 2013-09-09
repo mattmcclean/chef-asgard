@@ -25,7 +25,7 @@ include_recipe "java"
 
 # == TOMCAT SETUP
 #
-include_recipe "tomcat::base"
+include_recipe "tomcat"
 
 tomcat "asgard" do
   action              :install
