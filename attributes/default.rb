@@ -44,12 +44,9 @@ default['java']['jdk_version'] = '6'
 
 # == TOMCAT SETTINGS
 #
-default["tomcat"]["version"] = "7"
+default["tomcat"]["base_version"] = "7"
 default["tomcat"]["prefix_dir"] = "/opt"
 default["tomcat"]["home"] = "/opt/tomcat/default"
-default["tomcat"]["jvm_opts"] = [ "-Xms512m", "-Xmx1024m", "-XX:MaxPermSize=128m", "-XX:PermSize=128m" ]
-default["tomcat"]["jmx_opts"] = []
-default["tomcat"]["more_opts"] = []
-default["tomcat"]["shutdown_wait"] = "5"
+default["tomcat"]["java_options"] = [ "-Xms512m", "-Xmx1024m", "-XX:MaxPermSize=128m", "-XX:PermSize=128m" ]
 default["tomcat"]["user"] = "tomcat"
 default["tomcat"]["group"] = "tomcat"
